@@ -1,0 +1,66 @@
+{
+  "author": "Koen van den Boogaart <koen@genericmedia.nl>",
+  "bin": {
+    "gma": "./dist/index.js"
+  },
+  "dependencies": {
+    "commander": "^13.1.0"
+  },
+  "description": "CLI for the GenericMedia App",
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@genericmedia/lib": "file:../lib",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.6.1",
+    "@types/node": "^25.2.3",
+    "eslint": "^9.39.1",
+    "eslint-plugin-perfectionist": "^4.15.1",
+    "rollup": "^4.53.3",
+    "rollup-plugin-delete": "^3.0.1",
+    "semantic-release": "^25.0.2",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.48.0"
+  },
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "./LICENSE",
+    "./README.md",
+    "./dist"
+  ],
+  "keywords": [
+    "cli",
+    "genericmedia",
+    "api"
+  ],
+  "license": "MIT",
+  "name": "@genericmedia/cli",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/genericmedia24/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/genericmedia24/cli/issues"
+  },
+  "homepage": "https://github.com/genericmedia24/cli#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "tsc && eslint 'src/**/*.ts' '*.mjs'",
+    "make": "rollup -c",
+    "test": "exit 0"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
